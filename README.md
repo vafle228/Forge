@@ -1,9 +1,5 @@
 <div align="center">
 
-<img src=".github/assets/banner.png" alt="Forge banner" width="100%"/>
-
-<br/>
-
 <img src=".github/assets/logo.png" alt="Forge logo" width="120"/>
 
 # Forge
@@ -16,6 +12,8 @@
 ![Runtime](https://img.shields.io/badge/runtime-Ollama-000000?style=flat-square&logo=ollama)
 ![Agent](https://img.shields.io/badge/agent-Hermes-8A2BE2?style=flat-square)
 ![Docker](https://img.shields.io/badge/Docker%20Compose-2496ED?style=flat-square&logo=docker&logoColor=white)
+
+<img src=".github/assets/banner.png" alt="Forge: an anime blacksmith forging glowing code on an anvil" width="100%"/>
 
 [Why](#-why-forge) ·
 [How it works](#-how-it-works) ·
