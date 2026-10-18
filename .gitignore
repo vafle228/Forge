@@ -1,0 +1,70 @@
+# --- Secrets -------------------------------------------------------------
+# Real secrets live only in .env, which is never mounted into `workspace`.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+id_*
+!id_*.pub
+
+# --- Runtime data --------------------------------------------------------
+# JSONL task log and other local logs (the folder itself is kept).
+logs/*
+!logs/.gitkeep
+*.log
+
+# Docker volumes / local data mounted by Compose
+data/
+volumes/
+.ollama/
+.hermes/
+
+# Model weights should never end up in Git
+*.gguf
+*.safetensors
+*.bin
+
+# --- Python --------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+.coverage
+htmlcov/
+
+# --- Node / TypeScript ---------------------------------------------------
+node_modules/
+dist/
+.vite/
+coverage/
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --- Rust ----------------------------------------------------------------
+target/
+
+# --- .NET ----------------------------------------------------------------
+bin/
+obj/
+*.user
+TestResults/
+
+# --- Databases -----------------------------------------------------------
+*.sqlite-journal
+*.db-journal
+
+# --- IDE / OS ------------------------------------------------------------
+.idea/
+.vscode/*
+!.vscode/extensions.json
+.vs/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
